@@ -15,7 +15,8 @@
 		420FA5B02AF8F4EC005BD9FE /* CarrotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420FA5AF2AF8F4EC005BD9FE /* CarrotView.swift */; };
 		420FA5B22AF8F4FC005BD9FE /* LemonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420FA5B12AF8F4FC005BD9FE /* LemonView.swift */; };
 		420FA5B42AF8F509005BD9FE /* OliveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420FA5B32AF8F509005BD9FE /* OliveView.swift */; };
-		420FA5B62AFA293C005BD9FE /* GroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420FA5B52AFA293B005BD9FE /* GroupView.swift */; };
+		420FA5B82AFA4795005BD9FE /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420FA5B72AFA4794005BD9FE /* Coordinator.swift */; };
+		420FA5BA2AFA4B94005BD9FE /* CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420FA5B92AFA4B94005BD9FE /* CoordinatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +29,8 @@
 		420FA5AF2AF8F4EC005BD9FE /* CarrotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrotView.swift; sourceTree = "<group>"; };
 		420FA5B12AF8F4FC005BD9FE /* LemonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonView.swift; sourceTree = "<group>"; };
 		420FA5B32AF8F509005BD9FE /* OliveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OliveView.swift; sourceTree = "<group>"; };
-		420FA5B52AFA293B005BD9FE /* GroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupView.swift; sourceTree = "<group>"; };
+		420FA5B72AFA4794005BD9FE /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		420FA5B92AFA4B94005BD9FE /* CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +69,8 @@
 				420FA5AF2AF8F4EC005BD9FE /* CarrotView.swift */,
 				420FA5B12AF8F4FC005BD9FE /* LemonView.swift */,
 				420FA5B32AF8F509005BD9FE /* OliveView.swift */,
-				420FA5B52AFA293B005BD9FE /* GroupView.swift */,
+				420FA5B72AFA4794005BD9FE /* Coordinator.swift */,
+				420FA5B92AFA4B94005BD9FE /* CoordinatorView.swift */,
 				420FA5A32AF8F438005BD9FE /* Assets.xcassets */,
 				420FA5A52AF8F438005BD9FE /* Preview Content */,
 			);
@@ -152,9 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				420FA5B82AFA4795005BD9FE /* Coordinator.swift in Sources */,
+				420FA5BA2AFA4B94005BD9FE /* CoordinatorView.swift in Sources */,
 				420FA5A22AF8F435005BD9FE /* AppleView.swift in Sources */,
 				420FA5B02AF8F4EC005BD9FE /* CarrotView.swift in Sources */,
-				420FA5B62AFA293C005BD9FE /* GroupView.swift in Sources */,
 				420FA5B42AF8F509005BD9FE /* OliveView.swift in Sources */,
 				420FA5AE2AF8F4CA005BD9FE /* BananaView.swift in Sources */,
 				420FA5A02AF8F435005BD9FE /* LearningNavigationApp.swift in Sources */,

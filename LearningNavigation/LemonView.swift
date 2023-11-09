@@ -8,17 +8,15 @@
 import SwiftUI
 
 struct LemonView: View {
-  @EnvironmentObject var groupView: GroupView
+  @EnvironmentObject var coordinator: Coordinator
   
   var body: some View {
-    NavigationView {
-      List {
-        Button("Dismiss") {
-          groupView.showLemon = false
-        }
+    List {
+      Button("Dismiss") {
+        coordinator.dismissSheet()
       }
-      .navigationTitle("🍋")
     }
+    .navigationTitle("🍋")
   }
 }
 

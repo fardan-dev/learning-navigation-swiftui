@@ -8,18 +8,16 @@
 import SwiftUI
 
 struct BananaView: View {
-  @EnvironmentObject var groupView: GroupView
+  @EnvironmentObject var coordinator: Coordinator
   
   var body: some View {
-    VStack {
-      List {
-        Button("Push 🥕") {
-          groupView.showCarrot = true
-        }
-        
-        Button("Pop") {
-          groupView.showBanana = false
-        }
+    List {
+      Button("Push 🥕") {
+        coordinator.push(.carrot)
+      }
+      
+      Button("Pop") {
+        coordinator.pop()
       }
     }
     .navigationTitle("🍌")

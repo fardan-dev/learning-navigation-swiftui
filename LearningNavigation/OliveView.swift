@@ -8,17 +8,15 @@
 import SwiftUI
 
 struct OliveView: View {
-  @EnvironmentObject var groupView: GroupView
+  @EnvironmentObject var coordinator: Coordinator
   
   var body: some View {
-    NavigationView {
-      List {
-        Button("Dismiss") {
-          groupView.showOlive = false
-        }
+    List {
+      Button("Dismiss") {
+        coordinator.dismissFullScreenCover()
       }
-      .navigationTitle("🫒")
     }
+    .navigationTitle("🫒")
   }
 }
 

@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct CarrotView: View {
-  @EnvironmentObject var groupView: GroupView
+  @EnvironmentObject var coordinator: Coordinator
   
   var body: some View {
     List {
       Button("Pop") {
-        groupView.showCarrot = false
+        coordinator.pop()
       }
       
       Button("Pop to Root") {
-        groupView.defaultValue()
+        coordinator.popToRoot()
       }
     }
     .navigationTitle("🥕")

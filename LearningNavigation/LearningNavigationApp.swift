@@ -11,7 +11,7 @@ import SwiftUI
 struct LearningNavigationApp: App {
   var body: some Scene {
     WindowGroup {
-      AppleView()
+      CoordinatorView()
     }
   }
 }

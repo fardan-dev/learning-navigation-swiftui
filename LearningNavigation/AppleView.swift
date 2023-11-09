@@ -8,47 +8,23 @@
 import SwiftUI
 
 struct AppleView: View {
-  @StateObject var groupView: GroupView = GroupView()
+  @EnvironmentObject var coordinator: Coordinator
   
   var body: some View {
-    NavigationView {
-      VStack {
-        List {
-          Button("Push 🍌") {
-            groupView.showBanana = true
-          }
-          
-          Button("Present 🍋") {
-            groupView.showLemon = true
-          }
-          
-          Button("Full Present 🫒") {
-            groupView.showOlive = true
-          }
-        }
-        .navigationTitle("🍎")
-        
-        NavigationLink("", isActive: $groupView.showBanana) {
-          ZStack {
-            BananaView()
-              .environmentObject(groupView)
-            
-            NavigationLink("", isActive: $groupView.showCarrot) {
-              CarrotView()
-                .environmentObject(groupView)
-            }
-          }
-        }
+    List {
+      Button("Push 🍌") {
+        coordinator.push(.banana)
       }
-      .sheet(isPresented: $groupView.showLemon) {
-        LemonView()
-          .environmentObject(groupView)
+      
+      Button("Present 🍋") {
+        coordinator.present(sheet: .lemon)
       }
-      .fullScreenCover(isPresented: $groupView.showOlive) {
-        OliveView()
-          .environmentObject(groupView)
+      
+      Button("Full Present 🫒") {
+        coordinator.present(fullScreenCover: .olive)
       }
     }
+    .navigationTitle("🍎")
   }
 }
 
